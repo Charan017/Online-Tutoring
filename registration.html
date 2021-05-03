@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="registration.css">
+</head>
+<body bgcolor="lightblue">
+	<div id="header" align="center">Registration Form</div>
+	<div class="form-style">
+		<h2>All Fields are Mandatory</h2>
+		<form name="form1" action="#" autocomplete="off">
+			<table align="center" width="400" border="0">
+				<tr>
+					<td width="125">&nbsp;Firstname</td>
+					<td width="100"><div class="input-group">
+						<input type="text" name="fname" size="20"></div>
+					</td>
+				</tr>
+				<tr>
+					<td width="125">&nbsp;Lastname</td>
+					<td width="100"><div class="input-group">
+						<input type="text" name="lname" size="20"></div>
+					</td>
+				</tr>
+				<tr><td>Gender:</td><td><span id="gen"><input type="radio" name="gender" value="male" id="male">Male<input type="radio" name="gender" value="female" id="female">Female</span></td></tr>
+				<tr><td>Subject:</td><td>
+					<div class="input-group">
+						<select id="Subjects">
+							<option value="">Choose a subject</option>
+							<option value="C">C</option>
+							<option value="C++">C++</option>
+							<option value="Java">Java</option>
+							<option value="Python">Python</option>
+							<option value="Html">HTML</option>
+							<option value="CSS">SQL</option>
+						</select>
+					</div>
+				</td></tr>
+				<tr>
+					<td>&nbsp;Mobile No:</td>
+					<td><div class="input-group"><input type="text" name="phone"></div></td>
+				</tr>
+				<tr>
+					<td>&nbsp;Email:</td>
+					<td><div class="input-group"><input type="text" name="email"></div></td>
+				</tr>
+				<tr><td></td><td> <button class="btn"><a href="#" class="id btn">Submit</a></button> &nbsp&nbsp<input type="reset" name="reset" value="reset" class="btn"></td></tr>
+			</table>
+		</form>
+	</div>
+	<script type="text/javascript" src="registration.js"></script>
+</body>
+</html>
+
+<!-- <input type="submit" name="submit" value="submit" class="id btn"> -->

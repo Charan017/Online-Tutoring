@@ -1,0 +1,317 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body
+{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),#009688),url(background.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif; 
+}
+.menu-bar
+{
+	background: rgb(0,150,0);
+}
+.menu-bar ul
+{
+	display:inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.menu-bar ul li
+{
+	width:120px;
+	margin: 15px;
+	padding: 15px;
+}
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+	background: #2bab0d;
+	border-radius: 3px;
+}
+.menu-bar .fa
+{
+	margin-right: 8px;
+}
+.sub-menu-1
+{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color: #b2ff00;
+}
+.fa-angle-right
+{
+	float: right;
+}
+.sub-menu-2
+{
+	display: none;;
+}
+.hover-me:hover .sub-menu-2
+{
+	position: absolute;
+	display: block;
+	margin-top: -40px;
+	margin-left: 140px;
+	background: rgb(0,100,0);
+}
+.signup-btn
+{
+	top: 40px;
+	right: 80px;
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+}
+.abc{
+	margin-bottom: 30px;
+	padding-left: 35px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 25px;
+	
+}
+#box
+{
+	height:350px;
+	width :1000px;
+	background: #051937;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#main
+{
+	height: 450px;
+	width: 480px;
+	background: #0fbcf9;
+	border-radius: 0px;
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	transform: translate(-50%,-50%);
+	z-index: 999;
+	background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+	background-size: 400%,400%;
+	animation: gradient 15s ease infinite;
+}
+#loginform, #signupform
+{
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	transform: translate(-50%,-50%);
+	z-index: 999;
+}
+#signupform
+{
+	top: 45%;
+	left: 75%;
+	visibility: hidden;
+}
+#loginform h1, #signupform h1
+{
+	font-family: 'Raleway',sans-serif;
+	font-size: 25px;
+	color: #051937;
+}
+#loginform input, #signupform input
+{
+	height: 40px;
+	width: 300px;
+	border: 0;
+	outline: none;
+	border-bottom: 1px solid #051937;
+	margin: 5px;
+	background: none;
+}
+input::placeholder
+{
+	color: rgb(102, 100, 100);
+}
+#loginform button, #signupform button
+{
+	height: 35px;
+	width: 130px;
+	background-color: #051937;
+	font-family: 'Raleway',sans-serif;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	margin-top: 30px;
+	margin-left: 175px;
+	color:#fff;
+}
+#loginBtn, #signupBtn
+{
+	height: 35px;
+	width: 120px;
+	background: transparent;
+	color:#0fbcf9;
+	border: 1px solid #0fbcf9;
+	outline: none;
+	border-radius: 5px;
+	position: absolute;
+	top: 65%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+	transition: all 0.5s;
+}
+#signupBtn
+{
+	left: 25%;
+}
+#loginBtn:hover, #signupBtn:hover
+{
+	background-color: #023f92;
+	color: #fff;
+	cursor: pointer;
+}
+#loginmsg, #signupmsg
+{
+	font-family: 'Raleway',sans-serif;
+	font-size: 25px;
+	color: #0fbcf9;
+	position: absolute;
+	top: 35%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+}
+#signupmsg
+{
+	left: 25%;
+}
+/****  animation effect ****/
+@keyframes gradient{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+
+.wrapper{
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+::-webkit-input-placeholder { 
+	color: pink;
+  }
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}

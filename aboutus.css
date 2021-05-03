@@ -1,0 +1,53 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: century Gothic;
+}
+.header
+{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.5),#009688),url("ab.jpg")no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.main ul
+{
+	display: inline-flex;
+	margin: 20px;
+}
+.main ul li
+{
+	list-style: none;
+	margin: 5px;
+	color: #b2b1b1;
+	cursor: pointer;
+	font-size: 20px;
+}
+.main ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.main ul li:hover
+{
+	background: #00CED1;
+	border-radius: 3px;
+}
+.main .fa
+{
+	margin-right: 8px;
+}
+.banner
+{
+	width: 50%;
+	background: rgba(0,0,0,0.7);
+	color: #ffffff;
+	text-align: center;
+	padding: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
